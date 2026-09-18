@@ -99,6 +99,17 @@ resource "aws_vpc_peering_connection" "hub_to_spoke" {
   }
 }
 
+resource "aws_route_table" "spoke_private_rt" {
+  vpc_id = aws_vpc.spoke.id
+  tags = {
+    Name = "spoke-private-rt"
+  }
+}
+
+resource "aws_route_table_association" "spoke_private_assoc" {
+  subnet_id      = aws_subnet.spoke_private_app.id
+  route_table_id = aws_route_table.spoke_private_rt.id
+}
 
 # --- S3 GATEWAY VPC ENDPOINT (Securing Traffic) ---
 resource "aws_vpc_endpoint" "s3" {
@@ -107,7 +118,7 @@ resource "aws_vpc_endpoint" "s3" {
   vpc_endpoint_type = "Gateway"
 
   route_table_ids = [
-    # Will route internal S3 traffic safely out of private subnets
+    aws_route_table.spoke_private_rt.id
   ]
 
   tags = {
