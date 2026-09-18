@@ -90,9 +90,9 @@ resource "aws_subnet" "spoke_private_db" {
 
 # --- VPC PEERING (Hub <-> Spoke) ---
 resource "aws_vpc_peering_connection" "hub_to_spoke" {
-  vpc_id        = aws_vpc.hub.id
-  peer_vpc_id   = aws_vpc.spoke.id
-  auto_accept   = true
+  vpc_id      = aws_vpc.hub.id
+  peer_vpc_id = aws_vpc.spoke.id
+  auto_accept = true
 
   tags = {
     Name = "hub-to-spoke-peering"
@@ -102,8 +102,8 @@ resource "aws_vpc_peering_connection" "hub_to_spoke" {
 
 # --- S3 GATEWAY VPC ENDPOINT (Securing Traffic) ---
 resource "aws_vpc_endpoint" "s3" {
-  vpc_id       = aws_vpc.spoke.id
-  service_name = "com.amazonaws.us-east-1.s3"
+  vpc_id            = aws_vpc.spoke.id
+  service_name      = "com.amazonaws.us-east-1.s3"
   vpc_endpoint_type = "Gateway"
 
   route_table_ids = [
