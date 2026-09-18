@@ -13,7 +13,6 @@ jobs:
     name: "Terraform Plan & Apply"
     runs-on: ubuntu-latest
     
-    # Use the directory where your terraform files are located
     defaults:
       run:
         working-directory: environments/prod
@@ -51,19 +50,3 @@ jobs:
       - name: Terraform Apply
         if: github.ref == 'refs/heads/main' && github.event_name == 'push'
         run: terraform apply -auto-approve
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Effect": "Allow",
-            "Action": [
-                "cloudtrail:DescribeTrails",
-                "cloudtrail:GetTrailStatus",
-                "cloudtrail:GetEventSelectors",
-                "sns:GetTopicAttributes",
-                "sns:ListTagsForResource"
-            ],
-            "Resource": "*"
-        }
-    ]
-}
