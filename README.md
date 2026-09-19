@@ -14,44 +14,59 @@ An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations p
 ## 🔐 State Management & Infrastructure Setup
 | Component | Purpose | Screenshot Verification |
 | :--- | :--- | :--- |
-| **S3 State Backend** | Encrypted remote state storage | ![S3 State Bucket](screenshots/sc-02-s3-state-bucket.png) *(Fig 2)* |
-| **DynamoDB Lock Table** | State locking protection | ![DynamoDB Lock Table](screenshots/sc-03-dynamodb-lock.png) *(Fig 3)* |
+| **S3 State Backend** | Encrypted remote state storage | <img width="1710" height="1112" alt="AWS S3 State Bucket" src="https://github.com/user-attachments/assets/62a17980-8299-4565-8915-811050a619b5" />
+ *(Fig 2)* |
+| **DynamoDB Lock Table** | State locking protection | <img width="1710" height="1112" alt="AWS DynamoDB State Locking Table" src="https://github.com/user-attachments/assets/e67e000b-5c5b-4767-bf7e-317c9461a758" />
+ *(Fig 3)* |
 
 ---
 
 ## 🌐 Networking & Connectivity Layer
 * **VPC Inventories & Topologies:**
-  * ![VPC List View](screenshots/sc-04-vpc-list.png) *(Fig 4: Amazon VPC List View)* 
-  * ![VPC Resource Map](screenshots/sc-05-vpc-resource-map.png) *(Fig 5: VPC Resource Map)*
+<img width="1710" height="1112" alt="Amazon VPC List View(Phase 2)" src="https://github.com/user-attachments/assets/f59f8514-b678-4047-86ed-792d20c05818" />
+ *(Fig 4: Amazon VPC List View)* 
+  <img width="1710" height="1112" alt="VPC Resource Map" src="https://github.com/user-attachments/assets/eb8c5ad4-5d0d-463c-b773-27ca2b987118" />
+ *(Fig 5: VPC Resource Map)*
 * **Routing & Connectivity:**
-  * ![VPC Peering Connection](screenshots/sc-06-vpc-peering.png) *(Fig 6: VPC Peering Connection)* 
-  * ![VPC Interface Endpoint](screenshots/sc-07-vpc-endpoint.png) *(Fig 7: VPC Endpoint / PrivateLink)*
+  <img width="1710" height="1112" alt="VPC Peering Connection" src="https://github.com/user-attachments/assets/999d1baa-e2e8-461c-8b67-dd4bf47224e8" />
+ *(Fig 6: VPC Peering Connection)* 
+  <img width="1710" height="1112" alt="VPC Endpoints" src="https://github.com/user-attachments/assets/d18676ab-b699-453f-ad75-8aacfe319c48" />
+ *(Fig 7: VPC Endpoint / PrivateLink)*
 
 ---
 
 ## 🛡️ Security, IAM & Compute Workloads
 * **Execution & IAM:**
-  * ![Terminal Execution Output](screenshots/sc-08-terminal-output.png) *(Fig 8: Terminal Execution Output)*
-  * ![Least Privilege IAM Role](screenshots/sc-09-iam-role-summary.png) *(Fig 9: Least-Privilege IAM Role Summary)*
+  <img width="1710" height="1112" alt="Terminal Execution Output" src="https://github.com/user-attachments/assets/3da1beb0-b0fc-41b1-b3ef-1f1cba814780" />
+ *(Fig 8: Terminal Execution Output)*
+  <img width="1710" height="1112" alt="The Least-Privilege IAM Role Summary(Part 3)" src="https://github.com/user-attachments/assets/a0b3c42c-95b7-47b8-9ddd-3e5e0a4fd6da" />
+ *(Fig 9: Least-Privilege IAM Role Summary)*
 * **Micro-Segmentation & Compute:**
-  * ![Database SG Ingress Restrictions](screenshots/sc-10-db-sg-restrictions.png) *(Fig 10: Database Security Group Ingress Restrictions)*
-  * ![EC2 Instances Dashboard](screenshots/sc-11-ec2-instances.png) *(Fig 11: EC2 Instances Dashboard with running VMs)*
+  <img width="1710" height="1112" alt="Database Security Group Ingress Restrictions" src="https://github.com/user-attachments/assets/c21156ac-a660-4adf-a6b1-ffe9ee8d4aea" />
+ *(Fig 10: Database Security Group Ingress Restrictions)*
+  <img width="1710" height="1112" alt="The EC2 Instances Dashboard showing both operational virtual machines running (Part 4)" src="https://github.com/user-attachments/assets/c2cde37a-2909-41be-930c-62f1d5c8c464" />
+ *(Fig 11: EC2 Instances Dashboard with running VMs)*
 
 ---
 
 ## 🤖 CI/CD Automation & Compliance
 * **Auditing & Pipelines:**
-  * ![CloudTrail Event History](screenshots/sc-12-cloudtrail-history.png) *(Fig 12: AWS CloudTrail Event History Dashboard)*
-  * ![GitHub Actions Successful Run](screenshots/sc-13-github-actions-run.png) *(Fig 13: GitHub Actions Successful Pipeline Run)*
+  <img width="1710" height="1112" alt="AWS CloudTrail Event History Dashboard(Part 5)" src="https://github.com/user-attachments/assets/8e5e4fe7-a58d-4d78-bf64-0f4174ccca86" />
+ *(Fig 12: AWS CloudTrail Event History Dashboard)*
+  <img width="1710" height="1112" alt="Github Actions successful run(Part 6)" src="https://github.com/user-attachments/assets/38f2cf0a-f21c-43ef-991c-7ad42c86278a" />
+ *(Fig 13: GitHub Actions Successful Pipeline Run)*
 
 ---
 
 ## 🔍 Threat Detection, SIEM & Incident Response
 * **Verification & SIEM:**
-  * ![Private Web App Verification](screenshots/sc-14-web-app-verification.png) *(Fig 14: Private Web App Verification output)*
-  * ![OpenSearch Collections](screenshots/sc-15-opensearch-collections.png) *(Fig 15: OpenSearch Serverless Collections Dashboard)*
+  <img width="1710" height="1112" alt="Private Web App Verification Page(Part 4)" src="https://github.com/user-attachments/assets/1257d615-ceeb-4eef-b4d2-9a5f05ca388a" />
+ *(Fig 14: Private Web App Verification output)*
+  <img width="1710" height="1112" alt="OpenSearch Collections" src="https://github.com/user-attachments/assets/da30c8d3-7aad-4fc4-8490-39203c0838ef" />
+ *(Fig 15: OpenSearch Serverless Collections Dashboard)*
 * **Event-Driven Security:**
-  * ![EventBridge Target Configuration](screenshots/sc-16-eventbridge-target.png) *(Fig 16: EventBridge Target Configuration)*
+  ![Uploading The EventBridge Target Configuration (SNS Topic).png…]()
+ *(Fig 16: EventBridge Target Configuration)*
 
 ---
 
