@@ -7,7 +7,24 @@ An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations p
 ## 📂 Repository Structure
 The repository follows a modular enterprise layout separating environments, infrastructure layers, and CI/CD pipelines.
 
-![Repository Structure](screenshots/sc-01-repo-structure.png)
+              +----------------------------------+
+              |            HUB VPC               |
+              |  - Bastion Host (Public Subnet)  |
+              |  - Transit Gateway Attachment    |
+              +----------------------------------+
+                               |
+                     (AWS Transit Gateway)
+                               |
+              +----------------------------------+
+              |           SPOKE VPC              |
+              |  - Public ALB                    |
+              |  - Private App Tier (EC2)        |
+              |  - Isolated DB Tier (PostgreSQL) |
+              +----------------------------------+
+                               |
+         [EventBridge Filter] -> [SNS Security Alerts]
+                               |
+               [OpenSearch Serverless SIEM Hub]
 *Figure 1: GitHub repository file structure showing modular Terraform code organization.*
 
 ---
