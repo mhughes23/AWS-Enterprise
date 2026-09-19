@@ -25,11 +25,14 @@ An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations p
 * **VPC Inventories & Topologies:**
 <img width="1710" height="1112" alt="Amazon VPC List View(Phase 2)" src="https://github.com/user-attachments/assets/f59f8514-b678-4047-86ed-792d20c05818" />
  *(Fig 4: Amazon VPC List View)* 
-  <img width="1710" height="1112" alt="VPC Resource Map" src="https://github.com/user-attachments/assets/eb8c5ad4-5d0d-463c-b773-27ca2b987118" />
+
+   <img width="1710" height="1112" alt="VPC Resource Map" src="https://github.com/user-attachments/assets/eb8c5ad4-5d0d-463c-b773-27ca2b987118" />
  *(Fig 5: VPC Resource Map)*
+
 * **Routing & Connectivity:**
   <img width="1710" height="1112" alt="VPC Peering Connection" src="https://github.com/user-attachments/assets/999d1baa-e2e8-461c-8b67-dd4bf47224e8" />
  *(Fig 6: VPC Peering Connection)* 
+
   <img width="1710" height="1112" alt="VPC Endpoints" src="https://github.com/user-attachments/assets/d18676ab-b699-453f-ad75-8aacfe319c48" />
  *(Fig 7: VPC Endpoint / PrivateLink)*
 
@@ -39,11 +42,14 @@ An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations p
 * **Execution & IAM:**
   <img width="1710" height="1112" alt="Terminal Execution Output" src="https://github.com/user-attachments/assets/3da1beb0-b0fc-41b1-b3ef-1f1cba814780" />
  *(Fig 8: Terminal Execution Output)*
+
   <img width="1710" height="1112" alt="The Least-Privilege IAM Role Summary(Part 3)" src="https://github.com/user-attachments/assets/a0b3c42c-95b7-47b8-9ddd-3e5e0a4fd6da" />
  *(Fig 9: Least-Privilege IAM Role Summary)*
+
 * **Micro-Segmentation & Compute:**
   <img width="1710" height="1112" alt="Database Security Group Ingress Restrictions" src="https://github.com/user-attachments/assets/c21156ac-a660-4adf-a6b1-ffe9ee8d4aea" />
  *(Fig 10: Database Security Group Ingress Restrictions)*
+
   <img width="1710" height="1112" alt="The EC2 Instances Dashboard showing both operational virtual machines running (Part 4)" src="https://github.com/user-attachments/assets/c2cde37a-2909-41be-930c-62f1d5c8c464" />
  *(Fig 11: EC2 Instances Dashboard with running VMs)*
 
@@ -53,6 +59,7 @@ An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations p
 * **Auditing & Pipelines:**
   <img width="1710" height="1112" alt="AWS CloudTrail Event History Dashboard(Part 5)" src="https://github.com/user-attachments/assets/8e5e4fe7-a58d-4d78-bf64-0f4174ccca86" />
  *(Fig 12: AWS CloudTrail Event History Dashboard)*
+  
   <img width="1710" height="1112" alt="Github Actions successful run(Part 6)" src="https://github.com/user-attachments/assets/38f2cf0a-f21c-43ef-991c-7ad42c86278a" />
  *(Fig 13: GitHub Actions Successful Pipeline Run)*
 
@@ -61,11 +68,13 @@ An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations p
 ## 🔍 Threat Detection, SIEM & Incident Response
 * **Verification & SIEM:**
   <img width="1710" height="1112" alt="Private Web App Verification Page(Part 4)" src="https://github.com/user-attachments/assets/1257d615-ceeb-4eef-b4d2-9a5f05ca388a" />
+  
  *(Fig 14: Private Web App Verification output)*
   <img width="1710" height="1112" alt="OpenSearch Collections" src="https://github.com/user-attachments/assets/da30c8d3-7aad-4fc4-8490-39203c0838ef" />
  *(Fig 15: OpenSearch Serverless Collections Dashboard)*
+  
 * **Event-Driven Security:**
-  ![Uploading The EventBridge Target Configuration (SNS Topic).png…]()
+  <img width="1710" height="1112" alt="The EventBridge Target Configuration (SNS Topic)" src="https://github.com/user-attachments/assets/5dd13d39-b357-4527-ae3e-106e3adc61d2" />
  *(Fig 16: EventBridge Target Configuration)*
 
 ---
