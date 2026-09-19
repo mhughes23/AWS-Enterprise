@@ -1,5 +1,23 @@
 # Connected AWS Enterprise Infrastructure & Threat Operations Center
 
+An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations project demonstrating the design, deployment, and automated threat monitoring of a multi-VPC AWS environment. Built with Terraform, GitHub Actions, Amazon OpenSearch Serverless, and native AWS security controls, this repository showcases end-to-end expertise in network engineering, least-privilege identity management, and cloud security operations.
+
+---
+
+## 📂 Repository Structure
+The repository follows a modular enterprise layout separating environments, infrastructure layers, and CI/CD pipelines.
+
+![Repository Structure](screenshots/sc-01-repo-structure.png)
+*Figure 1: GitHub repository file structure showing modular Terraform code organization.*
+
+---
+
+## 🏗️ Architecture Overview
+
+The environment is built on a scalable **Hub-and-Spoke VPC Architecture** connected via **AWS Transit Gateway**, featuring strict network tier segmentation, encrypted state management, and automated incident detection pipelines.
+
+# Connected AWS Enterprise Infrastructure & Threat Operations Center
+
 An enterprise-grade Cloud Infrastructure-as-Code (IaC) and Security Operations project demonstrating the design, deployment, and automated threat monitoring of a multi-VPC AWS environment. Built with Terraform, GitHub Actions, Amazon OpenSearch Serverless, and native AWS security controls.
 
 ---
